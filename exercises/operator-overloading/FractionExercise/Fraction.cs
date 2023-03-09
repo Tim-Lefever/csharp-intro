@@ -85,5 +85,40 @@ namespace FractionExercise
 
             return a.Multiply(b.Invert());
         }
+
+        public static Fraction operator +(Fraction a, Fraction b)
+        {
+            return a.Add(b);
+        }
+
+        public static Fraction operator -(Fraction a, Fraction b)
+        {
+            return a.Subtract(b);
+        }
+
+        public static Fraction operator -(Fraction a)
+        {
+            return a.Negate();
+        }
+
+        public static Fraction operator *(Fraction a, Fraction b)
+        {
+            return a.Multiply(b);
+        }
+
+        public static Fraction operator /(Fraction a, Fraction b)
+        {
+            return a.Divide(b);
+        }
+
+        public static bool operator ==(Fraction a, Fraction b)
+        {
+            return a.Equals(b);
+        }
+
+        public static bool operator !=(Fraction a, Fraction b)
+        {
+            return !a.Equals(b);
+        }
     }
 }
